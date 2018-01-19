@@ -40,4 +40,4 @@ This means there could be bugs, or queries that need for better optimisation, re
 
 **GraphDBLP** makes use of:
 1. Neo4j as graph-database for querying the knowledge base
-2. The keywords here included have been identified by the [FacetedDBLP](http://www.ifis.cs.tu-bs.de/sites/default/files/biblio/tcdl08_pdf_19580.pdf) project.
+2. The keywords here included have been identified by the [FacetedDBLP](http://dblp.l3s.de/dblp++.php) project.
