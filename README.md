@@ -9,10 +9,10 @@
 4. perform shortest-paths over DBLP (e.g., the shortest-path between authors, the analysis of co-author networks, etc.) 
 
 # Installation
-GraphDBLP is built on top of Neo4j graph-database. This means you fist need to download and install Neo4j as follows:
+GraphDBLP is built on top of Neo4j graph-database. This means you have to download and install Neo4j as follows:
 1. Download the [Neo4j graph-database](https://neo4j.com/download/). Notice that GraphDBLP has been built on Neo4j Community Edition 3.2.5. We suggest to download Neo4j Desktop and then deploy a new GraphDB instance we call "GraphDBLP" using the Neo4j Community Edition 3.2.5.
 2. Download the [dump file](https://goo.gl/Cy1AH1) that contains the whole GraphDBLP database in a local folder (e.g., Download). The procedures that transform DBLP into a graph-database are time consuming and discussed in [the paper](https://link.springer.com/article/10.1007/s11042-017-5503-2). Here, for your convencience, we recommend to import the GraphDBLP database instance into your local Graph-database instance as follows.  
-3. Just press "Manage" and then "Terminal". Move to bin directory with `cd bin` then type `./neo4j-admin load --from=path_to_your_donwload_folder/graph.db.dump --database=GraphDBLP --force`. This operation may take a while. Please do not close the window while running.
+3. Just press "Manage" and then "Terminal". Move to bin directory with `cd bin` then type `./neo4j-admin load --from=path_to_your_donwload_folder/graph.db.dump --force`. This operation may take a while. Please do not close the window while running.
 4. Just press the Start button to run GraphDB instance through the Neo4j Desktop app. Notice that the first run may take a while.
 5. As some GraphDBLP queries are time and memory consuming, we suggest to increase the memory available to Neo4j. This can be easily done through Neo4j Desktop App-->Manage-->Settings. Here just modify the rows `dbms.memory.heap.initial_size=512m` and `dbms.memory.heap.max_size=1G` with the desired settings. The higher, the better. Remember to restart the sever in case of changes.
 
