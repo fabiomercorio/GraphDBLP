@@ -13,13 +13,10 @@ You can install GraphDBLP in 5 steps as follows.
 
 ## Step1: Download Neo4j
 GraphDBLP is built on top of Neo4j graph-database. This means you have to download [Neo4j graph-database](https://neo4j.com/download/). Notice that GraphDBLP has been built on Neo4j Community Edition 3.2.5. We suggest to download Neo4j Desktop and then deploy a new GraphDB instance we call "GraphDBLP" using the Neo4j Community Edition 3.2.5.
-
 ## Step2: Download GraphDBLP database dump 
 Download the [dump file](https://goo.gl/Cy1AH1) that contains the whole GraphDBLP database in a local folder (e.g., Download). The procedures that transform DBLP into a graph-database are time consuming and discussed in [the paper](https://link.springer.com/article/10.1007/s11042-017-5503-2). Here, for your convencience, we recommend to import the GraphDBLP database instance into your local Graph-database instance as follows.  
-
 ##Step3: Build the Graph instance
 Open the Neo4j Desktop app. Here press "Manage" and then "Terminal". Move to bin directory with `cd bin` then type `./neo4j-admin load --from=path_to_your_donwload_folder/graph.db.dump --force`. This operation may take a while. Please do not close the window while running.
-
 ##Step4: Run GraphDBLP
 4. Just press the Start button to run GraphDB instance through the Neo4j Desktop app. Notice that the first run may take a while.
 
