@@ -41,7 +41,7 @@ Please cite this paper as: Mezzanzanica, M., Mercorio, F., Cesarini, M., Moscato
 
 # Disclaimer and Credits
 
-GraphDBLP is an experimental tool developed as a proof of concepts to empirically verify some how a graph-based analysis can be performed over the well known DBLP computer science biography.  
+GraphDBLP is an experimental tool developed as a proof of concepts to empirically verify how a graph-based analysis can be performed over the well known DBLP computer science bibliography.  
 This means there could be bugs, or queries that need for better optimisation, refinement or improvement. The aim behind this project is to show that computer science bibliography can be queried as a graph. If you aim at joining this project please contact us!
 
 **GraphDBLP** makes use of:
