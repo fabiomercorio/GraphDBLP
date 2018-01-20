@@ -18,7 +18,7 @@ Download the [dump file](https://goo.gl/Cy1AH1) that contains the whole GraphDBL
 ## Step3: Build the Graph instance
 Open the Neo4j Desktop app. Here press "Manage" and then "Terminal". Move to bin directory with `cd bin` then type `./neo4j-admin load --from=path_to_your_donwload_folder/graph.db.dump --force`. This operation may take a while. Please do not close the window while running.
 ## Step4: Run GraphDBLP
-4. Just press the Start button to run GraphDB instance through the Neo4j Desktop app. Notice that the first run may take a while.
+Just press the Start button to run GraphDB instance through the Neo4j Desktop app. Notice that the first run may take a while.
 ## Step5: Tune GraphDBLP resources to improve response-time [optional]
 As some GraphDBLP queries are time and memory consuming, we suggest to increase the memory available to Neo4j. This can be easily done through Neo4j Desktop App-->Manage-->Settings. Here just modify the rows `dbms.memory.heap.initial_size=512m` and `dbms.memory.heap.max_size=1G` with the desired settings. The higher, the better. Remember to restart the sever in case of changes.
 
