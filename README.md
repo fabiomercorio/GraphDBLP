@@ -45,5 +45,6 @@ GraphDBLP is an experimental tool developed as a proof of concepts to empiricall
 This means there could be bugs, or queries that need for better optimisation, refinement or improvement. The aim behind this project is to show that computer science bibliography can be queried as a graph. If you aim at joining this project please contact us!
 
 **GraphDBLP** makes use of:
-1. Neo4j as graph-database for querying the knowledge base
+1. DBLP updated at December 2016;
+1. Neo4j as graph-database for querying the knowledge base;
 2. The keywords here included have been identified by the [FacetedDBLP](http://dblp.l3s.de/dblp++.php) project.
