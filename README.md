@@ -10,7 +10,7 @@
 
 # GraphDBLP Data Model
 
-![Image of GraphDBLP Data Model](https://github.com/fabiomercorio/GraphDBLP/edit/master/graphdblp_data_model.jpg)
+![Image of GraphDBLP Data Model](https://github.com/fabiomercorio/GraphDBLP/blob/master/images/graphdblp_data_model.jpg)
 
 # Installation
 You can install GraphDBLP in 5 steps as follows.
