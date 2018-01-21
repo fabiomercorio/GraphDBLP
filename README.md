@@ -8,6 +8,10 @@
 3. perform social network analyses over the whole community;
 4. perform shortest-paths over DBLP (e.g., the shortest-path between authors, the analysis of co-author networks, etc.) 
 
+# GraphDBLP Data Model
+
+![Image of GraphDBLP Data Model](https://github.com/fabiomercorio/GraphDBLP/edit/master/graphdblp_data_model.jpg)
+
 # Installation
 You can install GraphDBLP in 5 steps as follows.
 
