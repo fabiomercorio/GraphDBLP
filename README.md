@@ -8,11 +8,11 @@
 3. perform social network analyses over the whole community;
 4. perform shortest-paths over DBLP (e.g., the shortest-path between authors, the analysis of co-author networks, etc.) 
 
-# GraphDBLP Data Model
+## GraphDBLP Data Model
 
 ![Image of GraphDBLP Data Model](https://github.com/fabiomercorio/GraphDBLP/blob/master/images/graphdblp_data_model.jpg)
 
-# Installation
+# Quick Start
 You can install GraphDBLP in 5 steps as follows.
 
 ## Step1: Download Neo4j
@@ -30,18 +30,18 @@ Just press the Start button to run GraphDB instance through the Neo4j Desktop ap
 GraphDBLP provides a shell-interface with 4 pre-defined queries, as specified in the paper. This would make easier the realisation of some standard queries over DBLP. Clearly, we assume you have a Python > 2.x shell installed on your machine.
 
 Open a terminal and go to the GraphDBLP folder you downloaded (or cloned). Then type `python ./GraphDBLP.py ` and select one of the following arguments:
-1. `-q1 keyword limit` Execute the query number 1 for **AUTHOR PROFILING**. This allows users to identify the most prolific authors in the DBLP community for a given keyword. This requires to specify also the keyword to be used and the limit value for results. Example: `-q1 'multimedia' 10` will perform query 1 using multimedia as keyword and collecting top 10 results. The meaning of 'relevance', 'score' and 'prolificness' are discussed in the paper
-2. `-q2 author-name-surname limit similarity-threshold` Execute query number 2 for **AUTHOR PUBLICATION RECORDS COMPARISON**. This query starts from the keywords describing an author’s research activities i.e., the keywords connected through the has research topic edges. For each keyword, the most proficient author in the field is identified, and the related data are retrieved: (prolific) author name, score, relevance, and related keywords. This requires to specify also the keyword to be used, the max number of researchers to be considered for each keyword and the similarity threshold value for similar keywords. Example: `-q2 'John von Neumann' 3 0.4` will perform query #2 profiling the publication record of John von Neumann and retrieving up to 3 top researchers for each keyword appearing the in profile of John von Neumann. In addition, for each keyword, only keywords with a similarity value grater than 0.4 will be returned
-3. `-q3 venue-name similarity-threshold` Execute query #3 for **COMPUTING LOCAL CLUSTERING COEFFICIENT ON RESEARCH COMMUNITIES**. This requires to specify the venue name and a threshold value for computing the similarity. Example: `-q3 'ijcai' 10` percent will perform query 3 computing the community starting from ijcai and considering venue with a similarity value with at least 10 percent.
-4. `-q4 author1-name-surname author2-name-surname rel-to-be-navigated limit` Execute query #4 for **SHORTEST PATHS BETWEEN RESEARCHERS**. This requires to specify the name of two researchers to be connected, the relationships that can be navigated separated by a pipe `|` and the max number of paths to be returned. Example: `-q4 'John von Neumann' 'Moshe Y. Vardi' 'authored|contains' 1`
+- `-q1 keyword limit` Execute the query number 1 for **AUTHOR PROFILING**. This allows users to identify the most prolific authors in the DBLP community for a given keyword. This requires to specify also the keyword to be used and the limit value for results. Example: `-q1 'multimedia' 10` will perform query 1 using multimedia as keyword and collecting top 10 results. The meaning of 'relevance', 'score' and 'prolificness' are discussed in the paper
+- `-q2 author-name-surname limit similarity-threshold` Execute query number 2 for **AUTHOR PUBLICATION RECORDS COMPARISON**. This query starts from the keywords describing an author’s research activities i.e., the keywords connected through the has research topic edges. For each keyword, the most proficient author in the field is identified, and the related data are retrieved: (prolific) author name, score, relevance, and related keywords. This requires to specify also the keyword to be used, the max number of researchers to be considered for each keyword and the similarity threshold value for similar keywords. Example: `-q2 'John von Neumann' 3 0.4` will perform query #2 profiling the publication record of John von Neumann and retrieving up to 3 top researchers for each keyword appearing the in profile of John von Neumann. In addition, for each keyword, only keywords with a similarity value grater than 0.4 will be returned
+- `-q3 venue-name similarity-threshold` Execute query #3 for **COMPUTING LOCAL CLUSTERING COEFFICIENT ON RESEARCH COMMUNITIES**. This requires to specify the venue name and a threshold value for computing the similarity. Example: `-q3 'ijcai' 10` percent will perform query 3 computing the community starting from ijcai and considering venue with a similarity value with at least 10 percent.
+- `-q4 author1-name-surname author2-name-surname rel-to-be-navigated limit` Execute query #4 for **SHORTEST PATHS BETWEEN RESEARCHERS**. This requires to specify the name of two researchers to be connected, the relationships that can be navigated separated by a pipe `|` and the max number of paths to be returned. Example: `-q4 'John von Neumann' 'Moshe Y. Vardi' 'authored|contains' 1`
 
 # Usage through Neo4j Shell
 
 **GraphDBLP** is built on top of Neo4j. This means you can perform any query using the [Cypher query language](https://neo4j.com/developer/cypher-query-language/). Once the Neo4j instance is running, open your browser at [localhost:7474/browser/](localhost:7474/browser/ ) 
 
-# Citation
+# Paper on GraphDBLP
 
-Please cite this paper as: Mezzanzanica, M., Mercorio, F., Cesarini, M., Moscato, V., Picariello, GraphDBLP: a system for analysing networks of computer scientists through graph databases. Multimed Tools Appl (2018). https://doi.org/10.1007/s11042-017-5503-2
+Please cite GraphDBLP as: Mezzanzanica, M., Mercorio, F., Cesarini, M., Moscato, V., Picariello, GraphDBLP: a system for analysing networks of computer scientists through graph databases. Multimed Tools Appl (2018). https://doi.org/10.1007/s11042-017-5503-2
 
 # Disclaimer and Credits
 
