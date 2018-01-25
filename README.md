@@ -28,7 +28,10 @@ Just press the Start button to run GraphDB instance through the Neo4j Desktop ap
 
 # Usage through Python Shell 
 GraphDBLP provides a shell-interface with 4 pre-defined queries, as specified in the paper. This would make easier the realisation of some standard queries over DBLP. Clearly, we assume you have a Python > 2.x shell installed on your machine.
-
+## Requested Packages
+The following Python packages are required to run `GraphDBLP.py`:
+- matplotlib, py2neo, pandas, tabulate, statistics. You can easily install all these packages with `pip` typing  `pip install matplotlib  py2neo pandas tabulate statistics` from the shell.
+## Running `GraphDBLP.py`
 Open a terminal and go to the GraphDBLP folder you downloaded (or cloned). Then type `python ./GraphDBLP.py ` and select one of the following arguments:
 - `-q1 keyword limit` Execute the query number 1 for **AUTHOR PROFILING**. This allows users to identify the most prolific authors in the DBLP community for a given keyword. This requires to specify also the keyword to be used and the limit value for results. Example: `-q1 'multimedia' 10` will perform query 1 using multimedia as keyword and collecting top 10 results. The meaning of 'relevance', 'score' and 'prolificness' are discussed in the paper
 - `-q2 author-name-surname limit similarity-threshold` Execute query number 2 for **AUTHOR PUBLICATION RECORDS COMPARISON**. This query starts from the keywords describing an author’s research activities i.e., the keywords connected through the has research topic edges. For each keyword, the most proficient author in the field is identified, and the related data are retrieved: (prolific) author name, score, relevance, and related keywords. This requires to specify also the keyword to be used, the max number of researchers to be considered for each keyword and the similarity threshold value for similar keywords. Example: `-q2 'John von Neumann' 3 0.4` will perform query #2 profiling the publication record of John von Neumann and retrieving up to 3 top researchers for each keyword appearing the in profile of John von Neumann. In addition, for each keyword, only keywords with a similarity value grater than 0.4 will be returned
