@@ -122,7 +122,7 @@ class GraphDBLP():
 		return resultset
 	
 	def Q4(self, author_start,author_end,rel_list,limit):
-		self.Q[4] = "match p=AllshortestPaths((n:author)-[:"+"|".join(rel_list)+"*]-(n2:author)) where lower(n.name) = \'"+author_start+"\' and lower(n2.name) = \'"+author_end+"\' return nodes(p) limit "+str(limit)
+		self.Q[4] = "match p=AllshortestPaths((n:author)-[:"+"|".join(rel_list)+"*]-(n2:author)) where lower(n.name) = lower(\'"+author_start+"\') and lower(n2.name) = lower(\'"+author_end+"\') return nodes(p) limit "+str(limit)
 
 		self.reconnect()
 		resultset = self.graph.run(self.Q[4]).data()
