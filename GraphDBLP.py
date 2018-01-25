@@ -13,7 +13,7 @@ import time
 import datetime
 from datetime import timedelta
 import statistics as st
-from testing import plot
+#from testing import plot
 import numpy as np 
 
 
