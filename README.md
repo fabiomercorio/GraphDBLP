@@ -31,6 +31,7 @@ GraphDBLP provides a shell-interface with 4 pre-defined queries, as specified in
 ## Requested Packages
 The following Python packages are required to run `GraphDBLP.py`:
 - matplotlib, py2neo, pandas, tabulate, statistics. You can easily install all these packages with `pip` typing  `pip install matplotlib  py2neo pandas tabulate statistics` from the shell.
+
 ## Running `GraphDBLP.py`
 Open a terminal and go to the GraphDBLP folder you downloaded (or cloned). Then type `python ./GraphDBLP.py ` and select one of the following arguments:
 ### Keywords Discovery
@@ -43,7 +44,6 @@ Use `-q2 author-name-surname limit similarity-threshold` to run query number 2 f
 ![Q3: Author Publication Records Comparison](https://github.com/fabiomercorio/GraphDBLP/blob/master/images/graphdblp_q3.jpeg)
 Use `-q3 venue-name similarity-threshold` to rum query #3 for **COMPUTING LOCAL CLUSTERING COEFFICIENT ON RESEARCH COMMUNITIES**. This requires to specify the venue name and a threshold value for computing the similarity. Example: `-q3 'ijcai' 10` percent will perform query 3 computing the community starting from ijcai and considering venue with a similarity value with at least 10 percent.
 ### Shortest Paths
-
 Use `-q4 author1-name-surname author2-name-surname rel-to-be-navigated limit` to execute query #4 for **SHORTEST PATHS BETWEEN RESEARCHERS**. This requires to specify the name of two researchers to be connected, the relationships that can be navigated separated by a pipe `|` and the max number of paths to be returned. Example: `-q4 'John von Neumann' 'Moshe Y. Vardi' 'authored|contains' 1`. We suggest to run this query directly on the Neo4j Browser (available on your local machine at [http://localhost:7474/browser/](http://localhost:7474/browser/)) as this would allow you obtaining a graphical representation of the returned paths, as shown in the figure below. The Cypher code to compute shortest paths might have the following structure: `match p=AllshortestPaths((n:author)-[:authored|contains*]-(n2:author)) where lower(n.name) = lower('fistname lastname author 1') and lower(n2.name) = lower('fistname lastname author 2') return p limit 1`. Notice that, in the example below only relations  labelled as `contains` or `authored` are allowed to be navigated. This results in a path with size 4 whilst a shortest one might be found by enabling the navigation of the relation `has_research_topic`.   
 
 ![Q2: Author Publication Records Comparison](https://github.com/fabiomercorio/GraphDBLP/blob/master/images/graphdblp_q4.jpeg)
