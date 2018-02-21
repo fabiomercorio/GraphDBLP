@@ -8,6 +8,9 @@
 3. perform social network analyses over the whole community;
 4. perform shortest-paths over DBLP (e.g., the shortest-path between authors, the analysis of co-author networks, etc.) 
 
+## GraphDBLP Stats
+To date, GraphDBLP contains 5+ million nodes and 24+ million relationships, enabling users to explore the DBLP data by referencing more than 3.3 million publications, 1.7 million authors, and more than 5 thousand publication venues. Through the use of word-embedding, more than 7.5 thousand keywords and related similarity values were collected
+
 ## GraphDBLP Data Model
 
 ![Image of GraphDBLP Data Model](https://github.com/fabiomercorio/GraphDBLP/blob/master/images/graphdblp_data_model_logo.jpg)
