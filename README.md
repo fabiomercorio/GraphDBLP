@@ -58,7 +58,8 @@ Use `-q4 author1-name-surname author2-name-surname rel-to-be-navigated limit` to
 # Paper on GraphDBLP
 
 Please cite GraphDBLP as: Mezzanzanica, M., Mercorio, F., Cesarini, M., Moscato, V., Picariello, GraphDBLP: a system for analysing networks of computer scientists through graph databases. Multimed Tools Appl (2018). https://doi.org/10.1007/s11042-017-5503-2
-`
+
+```
 @Article{Graphdblp2018,
 author="Mezzanzanica, Mario
 and Mercorio, Fabio
@@ -71,7 +72,8 @@ year="2018",
 issn="1573-7721",
 doi="10.1007/s11042-017-5503-2",
 url="https://doi.org/10.1007/s11042-017-5503-2"
-}`
+}
+```
 
 
 
