@@ -1,7 +1,6 @@
 ## Great NEWS ##
 Now **GraphDBLP** has been provided by a wonderful Web GUI interface. Build your own following instructions at [Backend with autocomplete service](https://github.com/andreascrivanti/GraphDBLP-backend) and [Frontend](https://github.com/andreascrivanti/GraphDBLP-frontend)
 Have a look to the [ECML-PKDD 2019 demo video](https://www.youtube.com/watch?v=eoDX-782Z8M&feature=youtu.be)
-Thanks to [Andrea Scrivanti](https://github.com/andreascrivanti) and [Ettore Colombo](https://github.com/hrecol) for contributing.
 
 ## What is GraphDBLP?
 
@@ -91,3 +90,6 @@ This means there could be bugs, or queries that need for better optimisation, re
 1. DBLP updated at December 2016;
 1. Neo4j as graph-database for querying the knowledge base;
 2. The keywords here included have been identified by the [FacetedDBLP](http://dblp.l3s.de/dblp++.php) project.
+
+A special thank to Thanks to [Andrea Scrivanti](https://github.com/andreascrivanti) and [Ettore Colombo](https://github.com/hrecol) for thri crucial contribution on this project.
+
