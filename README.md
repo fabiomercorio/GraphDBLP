@@ -1,4 +1,4 @@
-## Great NEWS ##
+# Great NEWS #
 Now **GraphDBLP** has been provided by a wonderful Web GUI interface. Build your own following instructions at [Backend with autocomplete service](https://github.com/andreascrivanti/GraphDBLP-backend) and [Frontend](https://github.com/andreascrivanti/GraphDBLP-frontend)
 Have a look to the [ECML-PKDD 2019 demo video](https://www.youtube.com/watch?v=eoDX-782Z8M&feature=youtu.be)
 
