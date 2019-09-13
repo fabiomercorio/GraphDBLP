@@ -91,5 +91,5 @@ This means there could be bugs, or queries that need for better optimisation, re
 1. Neo4j as graph-database for querying the knowledge base;
 2. The keywords here included have been identified by the [FacetedDBLP](http://dblp.l3s.de/dblp++.php) project.
 
-A special thank to Thanks to [Andrea Scrivanti](https://github.com/andreascrivanti) and [Ettore Colombo](https://github.com/hrecol) for thri crucial contribution on this project.
+A special thank to Thanks to [Andrea Scrivanti](https://github.com/andreascrivanti) and [Ettore Colombo](https://github.com/hrecol) for their contribution on this project.
 
