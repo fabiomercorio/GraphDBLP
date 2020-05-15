@@ -79,6 +79,27 @@ url="https://doi.org/10.1007/s11042-017-5503-2"
 }
 ```
 
+while the whole GraphDBLP system (with GUI) can be cited as
+
+Fabio Mercorio, Mario Mezzanzanica, Vincenzo Moscato, Antonio Picariello, Giancarlo Sperlì:
+A Tool for Researchers: Querying Big Scholarly Data Through Graph Databases. ECML/PKDD (3) 2019: 760-763
+```
+@inproceedings{DBLP:conf/pkdd/MercorioMMPS19,
+  author    = {Fabio Mercorio and
+               Mario Mezzanzanica and
+               Vincenzo Moscato and
+               Antonio Picariello and
+               Giancarlo Sperl{\`{\i}}},
+  title     = {A Tool for Researchers: Querying Big Scholarly Data Through Graph
+               Databases},
+  booktitle = {Machine Learning and Knowledge Discovery in Databases - European Conference,
+               {ECML} {PKDD} 2019},
+  pages     = {760--763},
+  year      = {2019},
+  url       = {https://doi.org/10.1007/978-3-030-46133-1\_46},
+  doi       = {10.1007/978-3-030-46133-1\_46}
+  }
+```
 
 
 # Disclaimer and Credits
